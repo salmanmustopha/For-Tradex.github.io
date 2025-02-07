@@ -81,6 +81,7 @@ display: flex;
 .header-ic p{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .header-nav nav{
 display: flex;
 gap: 30px;
@@ -318,7 +319,21 @@ marquee{
   display: flex;
   justify-self: center;
   align-items: center;
+  animation: bw 30s linear infinite;
 }
+@keyframes bw{
+  25%{
+    background: url(banner-1.jpg);
+  }
+  50%{
+    background: url(banner-2.jpg);
+  } 
+  100%{
+    background: url(banner-3.jpg);
+  } 
+   
+}
+
 .bg-image h2{
 font-size:60px;
 line-height:64px;
@@ -1244,6 +1259,7 @@ align-items: start;
 justify-self: start;
 }
 }
+
 @media(max-width:790px){
 body{
 font-size: 20px;
@@ -1251,6 +1267,8 @@ font-size: 20px;
 .header-nav{
 display: none;
 }
+
+  
 .header .bx-menu{
 font-size: 30px;
 color: black;
@@ -2755,10 +2773,17 @@ hr{
 .bubble-all{
 display: grid;
 grid-template-columns: repeat(1,380px);
-align-items: start;
-justify-self: start;
+align-items: center;
+justify-self: center;
 gap: 20px;
 padding: 0px 0px;
+}
+hr{
+  width: 300px;
+}
+.sign-al{
+  display: block;
+  justify-self: center;
 }
 }
 
